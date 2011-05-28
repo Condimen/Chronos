@@ -4,6 +4,7 @@ Developer: F Condimen
 Site: condimen.weebly.com
 E-mail: fcondimen@gmail.com
 Twitter: @condimen
+Location: Madrid, Spain
 
 /* SITE */
 
