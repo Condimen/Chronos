@@ -1,0 +1,12 @@
+/* TEAM */
+
+Developer: F Condimen
+Site: condimen.weebly.com
+E-mail: fcondimen@gmail.com
+Twitter: @condimen
+
+/* SITE */
+
+Last update: YY/MM/DD
+Standards: HTML, CSS3
+Software: Adobe DreamWeaver

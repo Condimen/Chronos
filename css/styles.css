@@ -1,0 +1,45 @@
+#dSeconds { width: 4px; height: 8px; -webkit-border-radius: 0px; border: none; background: black; margin: auto; z-index: 1; position: relative;
+	-webkit-transform-origin: 2px 310px;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;
+}
+/*#dSeconds { width: 20px; height: 15px; background: black; margin:auto; z-index: 1; position: relative;}*/
+
+#seconds { width: 4px; height: 120px; border: none; background: black; margin: -8px auto 0; display: block; z-index: 0;
+	-webkit-transform-origin: 2px 310px;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;}
+			
+#minutes { width: 4px; height: 100px; border: none; background: black; margin: auto; display: block; z-index: 0;
+	-webkit-transform-origin: 2px 190px;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 3600s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;}
+			
+#hours { width: 4px; height: 90px; border: none; background: black; margin: auto; display: block; z-index: 0;
+	-webkit-transform-origin: 2px 90px;
+	-webkit-animation-name: rotate;
+	-webkit-animation-duration: 36000s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: paused;}
+
+div.buttons { width: 300px; margin: 340px auto; display: block;}
+button { width: 70px; height: 70px; -webkit-border-radius: 35px; margin: 15px; display: block; float: left; border: solid 1px rgb(153,153,153); background: rgba(0,0,0,.2)}
+button:hover { -webkit-transform: scale(1.05);}
+button:active { box-shadow: inset 0px 0px 20px rgba(0,0,0,.5);}
+
+div.circle { width: 620px; height: 620px; -webkit-border-radius: 310px; margin: -310px auto; background: rgb(153,153,153);}
+
+@-webkit-keyframes rotate {
+	from { -webkit-transform: rotate(0deg) }
+	to { -webkit-transform: rotate(360deg) }
+}

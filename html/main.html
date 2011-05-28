@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Web Clock</title>
+<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+<link href="../js/buttons.js" type="aplication/javascript" />
+<script>
+function start() {
+	dSeconds.style.WebkitAnimationName = "rotate";
+	seconds.style.WebkitAnimationName = "rotate";
+	minutes.style.WebkitAnimationName = "rotate";
+	hours.style.WebkitAnimationName = "rotate";
+	dSeconds.style.WebkitAnimationIterationCount = "infinite";
+	seconds.style.WebkitAnimationIterationCount = "infinite";
+	minutes.style.WebkitAnimationIterationCount = "infinite";
+	hours.style.WebkitAnimationIterationCount = "infinite";
+	dSeconds.style.WebkitAnimationPlayState = "running";
+	seconds.style.WebkitAnimationPlayState = "running";
+	minutes.style.WebkitAnimationPlayState = "running";
+	hours.style.WebkitAnimationPlayState = "running";
+	
+}
+function pause() {
+	dSeconds.style.WebkitAnimationPlayState = "paused";
+	seconds.style.WebkitAnimationPlayState = "paused";
+	minutes.style.WebkitAnimationPlayState = "paused";
+	hours.style.WebkitAnimationPlayState = "paused";
+}
+function restart() {
+	dSeconds.style.WebkitAnimationName = "";
+	ssecondsstyle.WebkitAnimationName = "";
+	minutes.style.WebkitAnimationName = "";
+	hours.style.WebkitAnimationName = "";
+	dSeconds.style.WebkitAnimationIterationCount = "0";
+	seconds.style.WebkitAnimationIterationCount = "0";
+	minutes.style.WebkitAnimationIterationCount = "0";
+	hours.style.WebkitAnimationIterationCount = "0";
+}
+function lap() {
+}
+</script>
+</head>
+<body>
+<div id="dSeconds"></div>
+<div id="seconds"></div>
+<div id="minutes"></div>
+<div id="hours"></div>
+<div id="bakground">
+	<div class="circle"></div>
+</div>
+
+<div class="buttons">
+    <button id="start" onclick="start()">Start</button>
+    <button id="pause" onclick="pause()">Pause</button>
+    <button id="restart" onclick="restart()">Restart</button>
+</div>
+
+</body>
+</html>
