@@ -1,5 +1,5 @@
-#dSeconds { width: 4px; height: 8px; -webkit-border-radius: 0px; border: none; background: black; margin: auto; top: 6px; z-index: 2; position: relative;
-	-webkit-transform-origin: 2px 310px;
+#dSeconds { width: 4px; height: 8px; -webkit-border-radius: 0px; border: none; background: black; margin: auto; z-index: 2; position: relative;
+	-webkit-transform-origin: 2px 318px;
 	-webkit-animation-name: rotate;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
@@ -8,7 +8,7 @@
 }
 /*#dSeconds { width: 20px; height: 15px; background: black; margin:auto; z-index: 1; position: relative;}*/
 
-#seconds { width: 4px; height: 120px; border: none; background: black; margin: -8px auto 0; top: 6px; display: block; z-index: 1; position: relative;
+#seconds { width: 4px; height: 120px; border: none; background: black; margin: auto; display: block; z-index: 1; position: relative;
 	-webkit-transform-origin: 2px 310px;
 	-webkit-animation-name: rotate;
 	-webkit-animation-duration: 60s;
@@ -27,20 +27,23 @@
 #hours { width: 4px; height: 90px; border: none; background: black; margin: auto; display: block; z-index: 1; position: relative;
 	-webkit-transform-origin: 2px 90px;
 	-webkit-animation-name: hours;
-	-webkit-animation-duration: 0s;
+	-webkit-animation-duration: 43200s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: paused;}
-
-div.buttons { width: 300px; margin: 630px auto;}
-button { width: 70px; height: 70px; -webkit-border-radius: 35px; margin: 15px; display: block; float: left; border: solid 1px rgb(153,153,153); background: rgb(204,204,204);}
-button:hover { -webkit-transform: scale(1.2);}
+	
+body { overflow: hidden; min-width: 640px; margin: 5px;}
+div.buttons { width: 70px; height: 70px; margin: 328px auto; position: relative;}
+div.buttons { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(-90deg);}
+button { width: 70px; height: 70px; -webkit-border-radius: 35px; display: block; position: fixed; border: none /*solid 1px rgb(153,153,153)*/; background: rgb(153,153,153); color: white;}
+button:hover { background: rgb(160,160,160);}
 button:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);}
+#start { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(30deg);}
+#restart { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(-30deg);}
 
-div.circle { width: 620px; height: 620px; -webkit-border-radius: 310px; margin: -304px auto; background: rgb(153,153,153);}
-div.border { width: 632px; height: 632px; -webkit-border-radius: 600px; margin: -626px auto; background: rgb(153,153,153); z-index: -10; position: relative;}
-div.Mmarks { width: 2px; margin: auto;}
-div.Mmarks div.normal { width: 2px; height: 10px; background: rgba(255,255,255,1); position: fixed;}
+div.circle { width: 636px; height: 636px; -webkit-border-radius: 600px; margin: -318px auto; background: rgb(153,153,153); z-index: -10; position: relative;}
+div.Mmarks { width: 1px; margin: auto;}
+div.Mmarks div.normal { width: 1px; height: 10px; background: white; position: fixed; margin: 8px auto;}
 div.Mmarks div.normal:nth-of-type(1) { height: 20px;}
 div.Mmarks div.normal:nth-of-type(2) { -webkit-transform-origin: 1px 310px; -webkit-transform: rotate(6deg);}
 div.Mmarks div.normal:nth-of-type(3) { -webkit-transform-origin: 1px 310px; -webkit-transform: rotate(12deg);}
@@ -103,16 +106,16 @@ div.Mmarks div.normal:nth-of-type(59) { -webkit-transform-origin: 1px 310px; -we
 div.Mmarks div.normal:nth-of-type(60) { -webkit-transform-origin: 1px 310px; -webkit-transform: rotate(-6deg);}
 
 div.DSmarks { width: 2px; margin: auto;}
-div.DSmarks div.normal { width: 2px; height: 6px; background: white; position: fixed;}
-div.DSmarks div.normal:nth-of-type(2) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(36deg);}
-div.DSmarks div.normal:nth-of-type(3) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(72deg);}
-div.DSmarks div.normal:nth-of-type(4) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(108deg);}
-div.DSmarks div.normal:nth-of-type(5) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(144deg);}
-div.DSmarks div.normal:nth-of-type(6) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(180deg);}
-div.DSmarks div.normal:nth-of-type(7) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(-144deg);}
-div.DSmarks div.normal:nth-of-type(8) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(-108deg);}
-div.DSmarks div.normal:nth-of-type(9) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(-72deg);}
-div.DSmarks div.normal:nth-of-type(10) { -webkit-transform-origin: 1px 316px; -webkit-transform: rotate(-36deg);}
+div.DSmarks div.normal { width: 2px; height: 4px; background: white; position: fixed;}
+div.DSmarks div.normal:nth-of-type(2) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(36deg);}
+div.DSmarks div.normal:nth-of-type(3) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(72deg);}
+div.DSmarks div.normal:nth-of-type(4) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(108deg);}
+div.DSmarks div.normal:nth-of-type(5) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(144deg);}
+div.DSmarks div.normal:nth-of-type(6) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(180deg);}
+div.DSmarks div.normal:nth-of-type(7) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(-144deg);}
+div.DSmarks div.normal:nth-of-type(8) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(-108deg);}
+div.DSmarks div.normal:nth-of-type(9) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(-72deg);}
+div.DSmarks div.normal:nth-of-type(10) { -webkit-transform-origin: 1px 318px; -webkit-transform: rotate(-36deg);}
 
 @-webkit-keyframes rotate {
 	from { -webkit-transform: rotate(0deg) }
