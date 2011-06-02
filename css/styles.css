@@ -33,13 +33,16 @@
 	-webkit-animation-play-state: paused;}
 	
 body { overflow: hidden; min-width: 640px; margin: 5px;}
-div.buttons { width: 70px; height: 70px; margin: 328px auto; position: relative;}
-div.buttons { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(-90deg);}
-button { width: 70px; height: 70px; -webkit-border-radius: 35px; display: block; position: fixed; border: none /*solid 1px rgb(153,153,153)*/; background: rgb(153,153,153); color: white;}
+div.buttons { width: 60px; height: 35px; margin: 320px auto; position: relative;  -webkit-transform-origin: 30px -320px; -webkit-transform: rotate(-90deg);}
+button { width: 60px; height: 35px; -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; display: block; position: fixed; border: none; background: rgb(153,153,153); color: white;}
 button:hover { background: rgb(160,160,160);}
-button:active { box-shadow: inset 0px 0px 10px rgba(0,0,0,.5);}
-#start { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(30deg);}
-#restart { -webkit-transform-origin: 35px -328px; -webkit-transform: rotate(-30deg);}
+button:active { margin-top: -1px;}
+#startPause { -webkit-transform-origin: 30px -320px; -webkit-transform: rotate(-30deg);}
+#startPause:active { margin-top: -1px; margin-left: -1px}
+.start:after { content: "Start";}
+.pause:after { content: "Pause";}
+#restart { -webkit-transform-origin: 30px -320px; -webkit-transform: rotate(30deg);}
+#restart:active { margin-top: -1px; margin-left: 1px}
 
 div.circle { width: 636px; height: 636px; -webkit-border-radius: 600px; margin: -318px auto; background: rgb(153,153,153); z-index: -10; position: relative;}
 div.Mmarks { width: 1px; margin: auto;}
