@@ -47,4 +47,5 @@ function restart() {
 	$("#startPause").attr("class", "start");
 }
 function lap() {
+	//to be coded
 }
