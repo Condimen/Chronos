@@ -95,7 +95,6 @@ button:active {
 	-webkit-transform: rotate(-30deg);
 }
 #startPause:active {
-	margin-top: -1px;
 	margin-left: -1px;
 }
 .start:after { content: "Start"; }
@@ -105,8 +104,13 @@ button:active {
 	-webkit-transform: rotate(30deg);
 }
 #restart:active {
-	margin-top: -1px;
 	margin-left: 1px;
+}
+#lap {
+	background: #ccc;
+}
+#lap:active {
+	margin: 0;
 }
 
 .circle {
