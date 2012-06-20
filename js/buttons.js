@@ -1,3 +1,14 @@
+var startState = true;
+
+
+document.onkeyup = function() {
+	if (event.keyCode == 32) {
+		playPause();
+		console.log(event.keyCode);
+	}
+}
+
+
 function playState(state) {
 	dSeconds.style.WebkitAnimationPlayState = state;
 	seconds.style.WebkitAnimationPlayState = state;
@@ -6,14 +17,17 @@ function playState(state) {
 }
 
 function playPause() {
-	if ($("#startPause").attr("class") == "start") {
-		$("#startPause").attr("class", "pause");
-		//playState("running");
-		start();
+
+	if (startState == true) {
+		playState("running");
+		console.log("Should be running");
+		// start();
+		startState = false;
 	}
 	else {
-		$("#startPause").attr("class", "start");
 		playState("paused");
+		console.log("Should be paused");
+		startState = true;
 	}
 }
 		
@@ -30,8 +44,6 @@ function start() {
 	seconds.style.WebkitAnimationDuration = "60s";
 	minutes.style.WebkitAnimationDuration = "3600s";
 	hours.style.WebkitAnimationDuration = "43200s";
-	playState("running");
-	
 }
 function restart() {
 /*	dSeconds.style.WebkitAnimationDuration = "1s";
