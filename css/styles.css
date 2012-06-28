@@ -45,6 +45,7 @@ h2 a:last-of-type {
 	font-weight: normal;
 	color: #000;
 	background: #abcdef;
+	z-index: 999;
 }
 h2 a:last-of-type:hover {
 	border: none;
