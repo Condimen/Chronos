@@ -2,7 +2,7 @@ var startState = true;
 
 
 document.onkeyup = function() {
-	if (event.keyCode == 32) {
+	if (event.keyCode == 83 || event.keyCode == 80) {
 		playPause();
 	}
 	if (event.keyCode == 82) {

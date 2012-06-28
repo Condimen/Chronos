@@ -1,13 +1,75 @@
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Antic);
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FUTURAN.TTF')
+}
+@font-face {
+	font-family: 'Futura';
+	font-weight: bold;
+	src: url('../fonts/FUTURAM.TTF')
+}
+
 body {
 	min-width: 610px;
-	margin-top: 10%;
-	position: relative;
+	margin: 5% auto 40% auto;
+	font-family: 'Futura', sans-serif;
 }
 * {
-	box-sizing: border-box;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+}
+h1, h2, h3 {
+	font-weight: bold;
+	margin-bottom: 1.5%;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+	font-size: 1em;
+}
+h2 a:last-of-type {
+	content: "Fork on Github";
+	width: 400px;
+	height: 18px;
+	padding: 5px 0 4px 0;
+	position: fixed;
+	top: 49px;
+	right: -135px;
+	-webkit-transform: rotate(45deg);
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+	background: #abcdef;
+}
+h2 a:last-of-type:hover {
+	border: none;
+}
+h2 a:last-of-type:visited {
+	color: #000;
+}
+p {
+	margin-bottom: 3%;
+}
+
+a {
+	text-decoration: none;
+	color: #abcdef;
+}
+a:hover {
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #abcdef;
 }
 
 
+/*Stuff for the clock*/
+#clock {
+	margin: 80px 0 70px 0;
+}
 .circle {
 	width: 600px;
 	height: 600px;

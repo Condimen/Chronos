@@ -2,33 +2,51 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Web Clock</title>
+<title>Chronos</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href="js/buttons.js" type="aplication/javascript" />
 
 </head>
 <body>
 
-	<div class="buttons">
-		<button id="start" class="start" onclick="playPause()"></button>
-		<!-- <button id="lap" onclick="lap()"></button> -->
-		<!-- <button id="reset" onclick="reset()"></button> -->
-	</div>
+	<h1>Chronos</h1>
+	<h2>By Juan Ortiz Zaforas <a href="http://twitter.com/condimen" target="_new">(@condimen)</a> <a href="#">Fork on Github</a></h2>
 
-	<div class="circle">
-		<div class="Mmarks">
-			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+	<!-- The clock -->
+	<div id="clock">
+		<div class="buttons">
+			<button id="start" class="start" onclick="playPause()"></button>
+			<!-- <button id="lap" onclick="lap()"></button> -->
+			<!-- <button id="reset" onclick="reset()"></button> -->
 		</div>
-		<div class="DSmarks">
-			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>
+
+		<div class="circle">
+			<div class="Mmarks">
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+			</div>
+			<div class="DSmarks">
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>
+			</div>
+			<div id="dSeconds"></div>
+			<div id="seconds"></div>
+			<div id="minutes"></div>
+			<div id="hours"></div>
 		</div>
-		<div id="dSeconds"></div>
-		<div id="seconds"></div>
-		<div id="minutes"></div>
-		<div id="hours"></div>
+		</div>
 	</div>
-	</div>
-	
+	<!-- End of clock -->
+
+	<p>
+		Chronos is a very simple chronometer built with CSS animations and a bit of JavaScript.
+		<h3>Features</h3>
+		<ul>
+			<li>Tenth of second, second, minute an hour hands</li>
+			<li>Start/stop button</li>
+			<li>Keyboard shortcuts for start/stop (<strong>s</strong> or <strong>p</strong>) and reset (<strong>r</strong>)</li>
+		</ul>
+	</p>
+
+<!-- Scripts -->
 <script src="js/buttons.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 </body>
