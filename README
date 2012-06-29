@@ -1,3 +1,13 @@
-Project name: Web clock
-Developer: Fonteius Condimen
-Description: the aim of this project is to build on entirely html & css.
+Chronos, by Juan Ortiz Zaforas (@condimen)
+
+
+Is a very simple chronometer built with CSS animations and a bit of JavaScript
+
+Features
+	- Tenth of second, second, minute and hour hands
+	- Start/stop button
+	- Keyboard shortcuts for start/stop (s or p) and reset (r)
+
+Feel free to use it. I'd appreciate if you give credit.
+
+Have fun!
