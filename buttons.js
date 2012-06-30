@@ -14,9 +14,9 @@ document.onkeyup = function() {
 
 function playState(state) {
 	dSeconds.style.WebkitAnimationPlayState = state;
-	seconds.style.WebkitAnimationPlayState = state;
-	minutes.style.WebkitAnimationPlayState = state;
-	hours.style.WebkitAnimationPlayState = state;
+	seconds.style.WebkitAnimationPlayState  = state;
+	minutes.style.WebkitAnimationPlayState  = state;
+	hours.style.WebkitAnimationPlayState    = state;
 }
 
 function playPause() {

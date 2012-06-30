@@ -3,12 +3,12 @@
 @font-face {
 	font-family: 'Futura';
 	font-weight: normal;
-	src: url('../fonts/FUTURAN.TTF')
+	src: url('fonts/FUTURAN.TTF')
 }
 @font-face {
 	font-family: 'Futura';
 	font-weight: bold;
-	src: url('../fonts/FUTURAM.TTF')
+	src: url('fonts/FUTURAM.TTF')
 }
 
 body {

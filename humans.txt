@@ -1,13 +1,17 @@
-/* TEAM */
+TEAM
+====
 
-Developer: F Condimen
-Site: condimen.weebly.com
-E-mail: fcondimen@gmail.com
+Developer: Juan Ortiz Zaforas
+Site: condimen.github.com/Chronos/index.html
+E-mail: condimen@me.com
 Twitter: @condimen
 Location: Madrid, Spain
 
-/* SITE */
 
-Last update: YY/MM/DD
-Standards: HTML, CSS3
-Software: Adobe DreamWeaver
+SITE
+====
+
+Last update: 30/6/2012
+Technologies: HTML, CSS3, JavasCript
+Software: Sublime Text 2 (beta)
+          Mac OSX
