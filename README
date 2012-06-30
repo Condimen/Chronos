@@ -7,7 +7,14 @@ Features
 	- Tenth of second, second, minute and hour hands
 	- Start/stop button
 	- Keyboard shortcuts for start/stop (s or p) and reset (r)
+	- More to come… (reset button is #1)
 
-Feel free to use it. I'd appreciate if you give credit.
+Known bugs
+	- Start/stop doesn't work properly in Chrome 19 (it does on 20)
+	- -webkit prefix only
+
+
+
+Feel free to use it. I'd appreciate very much if you give credit.
 
 Have fun!
