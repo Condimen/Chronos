@@ -11,7 +11,8 @@ Features
 
 Known bugs
 	- Start/stop doesn't work properly in Chrome 19 (it does on 20)
-	- -webkit prefix only
+	- Strange behaviour of "Fork tag" when the chronometer starts
+	- -webkit prefix only (Prefix Free to be added)
 
 
 
