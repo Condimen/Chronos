@@ -1,2 +1,1 @@
-DirectoryIndex index.html
 RewriteRule ^A$ index.html [L]
