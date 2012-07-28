@@ -4,9 +4,11 @@ var startState = true;
 document.onkeyup = function() {
 	if (event.keyCode == 83 || event.keyCode == 80) {
 		playPause();
+		mixpanel.track("Start/stop shortcut");
 	}
 	if (event.keyCode == 82) {
 		location.reload();
+		mixpanel.track("Reset shortcut");
 	}
 	console.log(event.keyCode);
 }
@@ -21,10 +23,11 @@ function playState(state) {
 
 function playPause() {
 
+	mixpanel.track("Start/stop");
+
 	if (startState == true) {
 		playState("running");
 		console.log("Running");
-		// start();
 		startState = false;
 	}
 	else {
