@@ -7,8 +7,8 @@ document.onkeyup = function() {
 		mixpanel.track("Start/stop shortcut");
 	}
 	if (event.keyCode == 82) {
-		location.reload();
 		mixpanel.track("Reset shortcut");
+		location.reload();
 	}
 	console.log(event.keyCode);
 }
