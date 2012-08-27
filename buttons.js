@@ -21,6 +21,7 @@ function playState(state) {
 
 function playPause() {
 
+
 	if (startState == true) {
 		playState("running");
 		console.log("Running");

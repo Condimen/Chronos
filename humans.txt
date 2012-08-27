@@ -11,7 +11,7 @@ Location: Madrid, Spain
 SITE
 ====
 
-Last update: 30/6/2012
+Last update: august 27 2012
 Technologies: HTML, CSS3, JavasCript
-Software: Sublime Text 2 (beta)
+Software: Sublime Text 2
           Mac OSX
