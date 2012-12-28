@@ -29,36 +29,16 @@ footer {
 	text-align: center;
 	clear: both;
 }
-@media all and (min-width: 600px) {
-
-	.container {
-		width: 60%;
-		height: 700px;
-		float: left;
-	}
-	.container:last-of-type {
-		width: 40%;
-		min-width: 350px;
-		/*float: right;*/
-		padding-right: 10%;
-	}
+.the-clock, .description {
+	margin: 0 auto 10em auto;
+	width: 100%;
 }
-@media all and (max-width: 600px) {
+.description {
+	max-width: 40em;
+}
 
-	footer {
-		padding: 3% 0 5% 0;
-	}
-	.container {
-		width: 100%;
-		height: 750px;
-		float: left;
-	}
-	.container:last-of-type {
-		width: 85%;
-		height: auto;
-		margin-left: 10%;
-		/*float: right;*/
-	}
+footer {
+	margin-bottom: 5em;
 }
 
 /* END LAYOUT */
